@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bs-warning: #fe9f10;
+    --bs-font-sans-serif: Poppins, sans-serif !important;
+    --bs-warning-rgb: 254, 159, 16;
+    --bs-link-hover-color-rgb: #fe9f10;
+    --bs-light-rgb: 255, 248, 224;
+}
+
+.btn-warning{
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #fe9f10;
+    --bs-btn-border-color: #fe9f10;
+
+    --bs-btn-hover-color: #fe9f10;
+    --bs-btn-hover-bg: #fff;
+}
+.btn-outline-warning{
+    --bs-btn-hover-color:white;
+}
+.btn:hover i{
+    color: #fe9f10;
+}
+
+h1, h2{
+    font-family: 'Lobster';
+}
+
+.nav-link.active{
+    color: var(--bs-warning) !important;
+    font-weight: bold;
+}
+.hero-side::before{
+    content: '';
+    position: absolute;
+    width: 100%; height: 100%;
+    background: url('assets/pattern.png');
+    opacity: 0.25;
+}
+.nav-link:focus, .nav-link:hover{
+    color: var(--bs-warning);
+}
+
+
+.food-item.hide{
+    display: none;
+}
+
+.btn.active{
+    color: white;
+}
+
+
+.img-line{
+    width: 50%;
+    height: 1px;
+    margin: 0 15px;
+    border-bottom: 1px dashed #7D7D7D;
+}
+
+#reserve form input{
+    border: none;
+    background: transparent;
+    margin: 1rem 0rem;
+    padding: 1rem;
+    color: white;
+    border-radius: 0;
+    border-bottom: 1px solid white;
+}
+#reserve form input::placeholder{
+    color: currentColor;
+}
+
+.icon{
+    background: #fff8e2;
+}
+.icon img{
+    width: 100%;
+}
+
+.border-right{
+    border-right: 1px dashed #ccc;
+}
+
+@media only screen and (max-width: 768px) {
+    html{
+        font-size: 50%;
+    }
+}
