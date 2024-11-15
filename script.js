@@ -101,4 +101,11 @@ $(document).ready(function() {
         });
     });
 
+    // Reserve Section
+    const today = new Date().toISOString().split('T')[0]; // Get today's date in YYYY-MM-DD format
+    const dateInput = document.querySelector('#reserve input[type="date"]'); // Target the date input inside the #reserve section
+    if (dateInput) {
+        dateInput.setAttribute('min', today); // Set the min attribute to today's date
+    }
+
 });
