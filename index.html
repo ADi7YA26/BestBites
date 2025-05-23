@@ -418,7 +418,7 @@
                             <input class="form-control" required placeholder="Your name" type="text">
 						</div>
 						<div class="col-md-4">
-                            <input class="form-control" required placeholder="Phone Number" type="tel">
+                            <input class="form-control" required placeholder="Phone Number" type="tel" pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number">
 						</div>
                         <div class="col-md-4">
                             <input class="form-control" required placeholder="Number Of People" onfocus="(this.type='number')" onblur="(this.type='text')">
@@ -430,7 +430,7 @@
                             <input class="form-control" required placeholder="Time" onfocus="(this.type='time')" onblur="(this.type='text')">
 						</div>
                         <div class="col-md-4">
-                            <input class="form-control" required placeholder="Date" onfocus="(this.type='date')" onblur="(this.type='text')">
+                            <input class="form-control" required placeholder="Date" type="date" onfocus="(this.type='date')" onblur="(this.type='text')" min="{{todayDate}}">
 						</div>
 					</div>
                     <div class="d-grid justify-content-center">
